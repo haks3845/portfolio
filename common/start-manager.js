@@ -28,7 +28,8 @@ startManager = new (function () {
     */
     function loadContentsFile(funcComplete) {
         var arrTemp = location.href.split("/");
-        var strFileName = arrTemp[arrTemp.length - 1].split(".")[0];
+        // var strFileName = arrTemp[arrTemp.length - 1].split(".")[0];
+        var strFileName = "KO_L3_093_03_01";
 
         var strContentsPath = strFileName + "_contents.js";
         var strScriptPath = "script/" + strFileName + ".js";
@@ -48,5 +49,6 @@ startManager = new (function () {
             if (external.showLoading) external.showLoading("잠시만 기다려 주세요.", nPerc)
         }
     }
+
 
 })();
