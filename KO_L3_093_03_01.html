@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <script src="common/js-loader.js"></script>
+    <script src="common/start-manager.js"></script>
+
+    <style>
+        #ending_particle .endingFadeOut {
+            animation: endingFadeOut 1.3s ease-out;
+            -webkit-animation: endingFadeOut 1.3s ease-out;
+            animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+        }
+
+        @keyframes endingFadeOut {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    (공통) 대파티클 :: 1~5
+  -->
+    <div id="ending_particle" class="hidden pointNone"
+        style="left: 0px;top:0px; z-index:200; position:absolute; display:none;">
+        <div id="ending_bg"
+            style="width:1280px;height:768px; background:#000; opacity:1; z-index:199; position:absolute;"></div>
+    </div>
+</body>
+
+</html>
